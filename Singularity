@@ -15,6 +15,7 @@ From: nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
 
     echo "Apt-getting packages"
     apt-get -y install build-essential
+    apt-get update
     apt-get -y install git
     apt-get -y install cmake
     apt-get -y install g++
@@ -63,6 +64,6 @@ export PATH LD_LIBRARY_PATH
 
 %test
 
-    nvcc --version
+    # nvcc --version
 
 
